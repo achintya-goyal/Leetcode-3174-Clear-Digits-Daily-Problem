@@ -1,43 +1,64 @@
-# lear Digits (LeetCode 3174)
+# Clear Digits (LeetCode 3174)
 
-Description
+
+Description:
 
 This Python function solves LeetCode problem 3174 - Clear Digits. It removes all digits from a given string. Additionally, for each digit removed, the closest preceding letter (if any) is also removed.
 
-Functionality
 
-Iterates through the string.
+Functionality:
 
-Removes any digit found.
+->Iterates through the string.
 
-If a digit is removed, the closest preceding letter is also removed.
+->Removes any digit found.
 
-Returns the modified string.
+->If a digit is removed, the closest preceding letter is also removed.
 
-Example
+->Returns the modified string.
+
+
+Example:
 
 sol = Solution()
+
 print(sol.clearDigits("a1b2c3"))
+
 
 Output:
 
 ""
 
-Usage
 
-Clone this repository.
+Usage:
 
-Run the script with any string input to remove digits along with their closest preceding letters.
+->Clone this repository.
 
-Complexity
+->Run the script with any string input to remove digits along with their closest preceding letters.
+
+
+Complexity:
 
 The worst-case time complexity is O(n²) due to string slicing operations inside loops.
 
-LeetCode Link
 
-LeetCode 3174 - Clear Digits
+Approach:
 
-Author
+i->len(string)
 
-[Your Name]
+if isdigit then pop.
+
+j = i-1
+
+j->0
+
+if is alphabet then pop.
+
+return string
+
+
+LeetCode Link: 
+https://leetcode.com/problems/clear-digits/description/
+
+
+Author: ACHINTYA GOYAL
 
